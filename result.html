@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ulang - result</title>
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <py-env>
+            - paths:
+                - ulang.py
+        </py-env>
+    </head>
+    <body>
+        <span id="result"></span>
+        <py-script>
+            import ulang
+
+            parameter = document.location.search
+            pm_list = [pm[1:].split("=") for pm in parameter.split("&")]
+            pm_dict = {}
+            
+            for pm in pm_list:
+                pm_dict[pm[0]] = pm[1]
+
+            if pm_dict["convert"] == "en":
+                result = ulang.encryption(pm_dict["text"])
+            elif pm_dict["convert"] == "de":
+                result = ulang.decryption(pm_dict["text"])
+
+            result_ele = Element("result")
+            result_ele.element.innerText = result
+        </py-script>
+    </body>
+</html>
