@@ -10,3 +10,6 @@ def encryption(*args):
 def decryption(*args):
     sentence = text_input.value
     result.element.innerText = ulang.decryption(sentence)
+
+
+
