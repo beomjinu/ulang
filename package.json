@@ -1,0 +1,20 @@
+{
+  "name": "ulang",
+  "version": "1.0.0",
+  "description": "https://beomjinu.github.io/ulang<br> <img src=\"https://github.com/beomjinu/ulang/blob/master/img/ulang.png?raw=true\" width=\"50%\">",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beomjinu/ulang.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beomjinu/ulang/issues"
+  },
+  "homepage": "https://github.com/beomjinu/ulang#readme"
+}
