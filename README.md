@@ -1,6 +1,6 @@
 # 🖌 ulang
 https://beomjinu.github.io/ulang<br>
-<img src="ulang.png" width="50%">
+<img src="https://github.com/beomjinu/ulang/blob/master/img/ulang.png?raw=true" width="50%">
 
 css - pico css<br>
 script - pyscript
