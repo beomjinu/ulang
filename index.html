@@ -1,6 +1,45 @@
-<html>
+<html lang="ko">
     <head>
+        <meta charset="utf-8">
+        <title>ulang</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <py-env>
+            - paths:
+                - ulang.py
+        </py-env>
+
+        <style>
+            @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+            * { 
+                font-family: 'Spoqa Han Sans Neo', 'sans-bold'; 
+            }
+
+            body {
+                padding-left: 30%;
+                padding-right: 30%;
+                
+            }
+
+            code {
+                color: #ffffff
+            }
+
+        </style>
     </head>
     <body>
+        <py-script src="main.py"></py-script>
+        <main class="container">
+            <div>
+                <h1># ulang</h1>
+                <input type="text" id="text_input" placeholder="input text!">
+                <button class="outline" id="encryption" pys-onClick="encryption">encryption</button>
+                <button class="outline" id="decryption" pys-onClick="decryption">decryption</button>
+                <textarea id="result" placeholder="result!"></textarea>
+            </div>
+        </main>
+        <foter>
+            <a href="https://github.com/beomjinu/ulang" target="_blank">github - beomjinu</a>
+        </foter>
     </body>
 </html>
