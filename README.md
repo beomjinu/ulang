@@ -4,3 +4,5 @@ https://beomjinu.github.io/ulang<br>
 
 css - pico css<br>
 script - pyscript
+
+<a href="app/ulang.dmg" download>데스크톱 앱 다운로드</a>
