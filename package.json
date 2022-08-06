@@ -5,7 +5,14 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "build:osx": "electron-builder --mac",
+    "build:linux": "npm run build:linux32 && npm run build:linux64",
+    "build:linux32": "electron-builder --linux --ia32",
+    "build:linux64": "electron-builder --linux --x64",
+    "build:win": "npm run build:win32 && npm run build:win64",
+    "build:win32": "electron-builder --win portable --ia32",
+    "build:win64": "electron-builder --win portable --x64"
   },
   "repository": {
     "type": "git",
@@ -16,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/beomjinu/ulang/issues"
   },
-  "homepage": "https://github.com/beomjinu/ulang#readme"
+  "homepage": "https://github.com/beomjinu/ulang#readme",
+  "devDependencies": {
+    "electron": "^20.0.1",
+    "electron-build": "^0.0.3"
+  }
 }
